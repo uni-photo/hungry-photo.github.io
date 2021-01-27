@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Description meta tags -->
+
+    <meta name="description" content="Jo Smith Photography Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lukasz Osiadacz">
+
+    <!-- EMBEDED LINKS -->
+
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="scratches/scratch.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JS Library -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <!-- Emotikony -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- TWITTER API -->
+    <div id="mySidenav" class="sidenav">
+
+        <!-- CLOSING BUTTON -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- API -->
+        <a class="twitter-timeline" data-theme="dark" data-height="800"
+            href="https://twitter.com/josmithphoto?ref_src=twsrc%5Etfw">Tweets by josmithphoto</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <header class="intro">
+
+        <!-- CANVAS -->
+        <canvas class="snow" id="snow"></canvas>
+
+
+        <!-- BURGER MENU -->
+
+        <div class="nav">
+
+
+            <img id="logo" src="images/icon/logo.svg" alt="">
+
+
+            <ul class="nav-menu-lrg">
+                <li><a href="#section-two">About</a></li>
+                <li><a href="#section-three">Gallery</a></li>
+                <li><a href="#section-four">Services</a></li>
+                <li><a href="#section-five">Contact</a></li>
+
+
+
+
+
+                <!--DARK MODE 
+                    <button onclick="myFunction()">Toggle dark mode</button> -->
+            </ul>
+
+
+            <!-- Burger Menu -->
+            <ul class="nav-links">
+                <li><a href="#section-two">About</a></li>
+                <li><a href="#section-three">Gallery</a></li>
+                <li><a href="#section-four">Services</a></li>
+                <li><a href="#section-five">Contact</a></li>
+            </ul>
+
+
+            <button class="navbar-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+
+
+        <div class="flex-container intro-header">
+            <div class="container-dis">
+                <h1 class="btn intro__title"><a href="＃" id="js-text" class="intro__title"><span
+                            class="intro__title"></span><span></span><span>H</span><span>u</span><span>n</span><span>g</span><span>r</span><span>y</span><span></span></a>
+                </h1>
+            </div>
+            <p class="intro__text">photographer</p>
+
+
+            <ul class="social-media flex-row">
+
+
+                <li><a class="social-media-links" href="https://www.facebook.com/josmithphotograph/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-media-links" href="https://www.instagram.com/josmithphotography123/?hl=en"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                            <path
+                                d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li id="twitter_icon" onclick="openNav()" class="social-media-links">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                    </svg>
+                </li>
+            </ul>
+
+            <!-- DOWN ARROW -->
+
+            <div class="flex-center margin-top ">
+
+                <a id="exploreMore" class="circle"><i class="arrow down"></i></a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="section-two" id="section-two">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+
+                    <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t31.0-8/29664795_1835825239821773_204454855452060646_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=N_chw7lSBpIAX_Y5SsU&_nc_ht=scontent-lhr8-1.xx&oh=323fa259e6ab5239082ceede6dab167b&oe=6036A309"
+                        alt="">
+
+                </div>
+                <div class="col">
+                    <h2 class="section-title section-title--dark">Who I am?</h2>
+                    <p class="paragraph">Hello my name is Jo Smith. Im professional photographer <i
+                            class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i>
+                        who graduated Art College in Photography. My specialisation are Weddings <i class="em em-tada"
+                            aria-role="presentation" aria-label="PARTY POPPER"></i> and Food Events. If you feel I'm
+                        right person to make your event special please feel free to contact me about quote. You can
+                        catch me also on Social Media and tell what do you think about my pics. <i
+                            class="em em-frame_with_picture" aria-role="presentation" aria-label=""></i></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-three" id="section-three">
+
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+
+            <h3 class="section-title events-title">Weedings</h3>
+            <div class="gallery hover-out">
+
+                <figure class="image"><img src="images/WeddingPhotography/wedding1.jpg" alt=""></figure>
+                <figure class="image"><img src="images/WeddingPhotography/wedding2.jpg" alt=""></figure>
+                <figure class="image"><img src="images/WeddingPhotography/wedding3.jpg" alt=""></figure>
+                <figure class="image"><img src="images/WeddingPhotography/wedding4.jpg" alt=""></figure>
+                <figure class="image"><img src="images/WeddingPhotography/wedding5.jpg" alt=""></figure>
+                <figure class="image"><img src="images/WeddingPhotography/wedding6.jpg" alt=""></figure>
+
+            </div>
+
+            <h3 class="section-title events-title">Landscapes</h3>
+            <div class="gallery">
+
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/290995709/m%3D900/v2?sig=abe948131b09e954e8f9a7aebb145309be790146fab791443f0130803d85e162'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/91558981/m%3D900/v2?sig=1863f85025e06e7857bfd960ac3d059a7a96817ab0ccd5cb31fbf80196008385'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/290995669/m%3D900/v2?sig=89ecc9ca58278114651999cfd23b7ce7145d99a42ca8c675f43c6af611df12ff'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/147602635/m%3D900/v2?sig=5d0511c49ed6310c128b1928727915d2d211b0d923dde5b19906868f989ba0bb'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/146961701/m%3D900/v2?sig=9a153d6b02fde32bc06621b5b6c9fceae25f961bc0fe3af4a0ef7e9f0a895c59'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img
+                        src='https://drscdn.500px.org/photo/146632755/m%3D900/v2?sig=c70504b3e51564e9d7a1bef985d975f84a990267c1bf3674e85f56ae39600e04'
+                        alt='Untitled by Augustyn on 500px.com' /></div>
+
+            </div>
+            <h3 class="section-title events-title">Food Events</h3>
+
+            <div class="gallery">
+
+
+                <div class="image6"><img src='images/food/food1.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img src='images/food/food2.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img src='images/food/food3.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img src='images/food/food4.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img src='images/food/food5.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+                <div class="image6"><img src='images/food/food6.jpg' alt='Untitled by Augustyn on 500px.com' /></div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="gallery-container flex-center">
+
+            <!-- MOBILE SLIDER -->
+
+            <img class="slide" name="slide" />
+
+        </div>
+
+
+        <!-- Buttons x2
+        {{-- <button id="prevBtn">Prev</button>--}}
+        {{-- <button id="nextBtn">Next</button>--}} -->
+    </section>
+
+    <section class="section-four" id="section-four">
+        <h2 class="section-title section-title--dark">Services</h2>
+        <div class="container row">
+            <div class="col">
+                <img src="https://cdn.pixabay.com/photo/2014/09/22/00/56/photographer-455747_960_720.jpg"
+                    alt="service image">
+            </div>
+            <div class="col">
+
+                <div class="services about-text about-appear">
+                    <p class="paragraph">My studio offer next services</p>
+                    <br></br>
+                    <p>* Private events = £40 p/h</p>
+                    <p>* Short-term contractual work = £25 p/h</p>
+                    <p>* Long-term contractual work = negotiable</p>
+                </div>
+                <div class="extra-offer">
+                    <br></br>
+                    <p>I also offer framed photographs for local companies. If you are of owner of bars, cafes or
+                        restaurants just contact me about hanging and selling my photographs in your branch. When you
+                        sold my art work 10% of the sale value going into your pocket. If you would like own photographs
+                        you can find pricing below. </p>
+                </div>
+
+            </div>
+
+        </div>
+        <h2 class="section-title section-title--dark">Pricing</h2>
+        <div class="services-cards container">
+
+
+            <div class="frame-padding">
+
+                <figure class="black frame">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/02/17/41/natural-2809597__340.jpg">
+
+                    <figcaption>
+                        <h2>Landscape (99£)</h2>
+                        <span>by <span class="fn">Jo Smith</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="frame-padding">
+                <figure class="black frame">
+                    <img src="https://cdn.pixabay.com/photo/2015/11/07/11/49/coffee-1031526__340.jpg">
+
+                    <figcaption>
+                        <h2>Food Event (89£)</h2>
+                        <span>by <span class="fn">Jo Smith</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="frame-padding">
+                <figure class="black frame">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/24/02/56/art-2436545__340.jpg">
+
+                    <figcaption>
+                        <h2>Portrait (79£)d</h2>
+                        <span>by <span class="fn">Jo Smith</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <section class="section-five" id="section-five">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+
+            <div class="row">
+                <div class="col">
+                    <h2>Have a project that you'd like help with? Get in touch...</h2>
+                    <div class="address-wrapper">
+                        <p>Jo Smith</p>
+                        <p>987Brook Street</p>
+                        <p>DundeeDD5 2EA</p>
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.158339701906!2d-2.8667446489770234!3d56.4650331806554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1spl!2suk!4v1605293766784!5m2!1spl!2suk"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <form class="form-wrapper flex-center" action="https://formspree.io/mzbbyqbo" method="POST">
+
+
+                        <label for="name">Name:</label>
+                        <div class="form">
+                            <input type="text" name="name" id="name" placeholder="Name" required="">
+                        </div>
+
+                        <label for="email">Email:</label>
+                        <div class="form">
+                            <input type="email" name="email" placeholder="Email" required="">
+                        </div>
+
+                        <label for="message">Message:</label>
+                        <div class="form">
+                            <textarea id="msg-box" name="massage" rows="10" cols="30"></textarea>
+                        </div>
+
+                        <div class="form">
+                            <input class="btn-form" type="submit" target="_blank">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- UP ARROW  -->
+        <a id="backToTop" class="flex-center"><i class="arrow up"></i>
+            <p>Back to top</p>
+        </a>
+    </section>
+
+
+    <footer>
+        <p class="footer-badge">Lukasz Osiadacz&copy;2020 supported by K.Sturgeon</p>
+
+        <ul class="media-links">
+            <li><a href="https://www.facebook.com/josmithphotograph/" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/josmithphotography123/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/josmithphoto?lang=en" target="_blank"><i
+                        class="fab fa-twitter-square"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/toogle.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
