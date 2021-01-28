@@ -58,11 +58,18 @@ $(document).ready(function () {
 
 //dark mode
 
+// function myFunction() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+// }
+
+// grab the button
+const btnDark = document.getElementsByClassName('.btn');
+console.log('button', btnDark);
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
-
 
 // Snow effect in Canvas
 
@@ -112,7 +119,8 @@ const defaultOptions = {
     color: 'orange',
     radius: [0.5, 3.0],
     speed: [1, 1.5],
-    wind: [-0.5, 3.0] };
+    wind: [-0.5, 3.0]
+};
 
 
 const SnowItem = (canvas, drawFn = null, opts) => {
@@ -125,7 +133,8 @@ const SnowItem = (canvas, drawFn = null, opts) => {
         radius: _.random(...radius),
         speed: _.random(...speed),
         wind: _.random(...wind),
-        isResized: false };
+        isResized: false
+    };
 
     const ctx = canvas.getContext('2d');
 
@@ -173,7 +182,8 @@ const SnowItem = (canvas, drawFn = null, opts) => {
     return {
         update,
         resized,
-        draw };
+        draw
+    };
 
 };
 
