@@ -71,9 +71,7 @@ function myFunction() {
     element.classList.toggle("dark-mode");
 }
 
-btnDark.addEventListener('click', function () {
-    myFunction();
-})
+btnDark.addEventListener('click', myFunction());
 
 // Snow effect in Canvas
 
