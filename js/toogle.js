@@ -71,7 +71,7 @@ function myFunction() {
     element.classList.toggle("dark-mode");
 }
 
-btn.addEventListener('click', function () {
+btnDark.addEventListener('click', function () {
     myFunction();
 })
 
