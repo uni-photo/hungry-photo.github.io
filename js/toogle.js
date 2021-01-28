@@ -64,7 +64,7 @@ $(document).ready(function () {
 // }
 
 // grab the button
-const btnDark = document.getElementsByClassName('.btn');
+const btnDark = document.getElementsByClassName('btn');
 console.log('button', btnDark);
 function myFunction() {
     var element = document.body;
