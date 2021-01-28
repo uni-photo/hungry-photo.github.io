@@ -66,12 +66,12 @@ $(document).ready(function () {
 // grab the button
 const btnDark = document.getElementsByClassName('.btn');
 console.log('button', btnDark);
-function myFunction() {
+function myFunction(event) {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
 
-btnDark.addEventListener('click', myFunction());
+event.addEventListener('click', myFunction());
 
 // Snow effect in Canvas
 
