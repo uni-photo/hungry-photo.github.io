@@ -56,15 +56,11 @@ $(document).ready(function () {
 })
 
 
-//dark mode
-
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
+//?dark mode
 
 //! Grab the button from HTML
 const btnDark = document.getElementsByClassName('btn');
+//!dark mode Function
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
