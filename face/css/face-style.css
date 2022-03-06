@@ -2,6 +2,9 @@ body {
     background-color: red;
 }
 
+#facebook_icon {
+right: 0;
+}
 
 /*Its hiding twitter feed*/
 
