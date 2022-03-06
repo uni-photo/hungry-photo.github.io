@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Component</title>
+    <link rel="stylesheet" href="css/face-style.css">
+</head>
+<body>
+
+    
+
+
+  <!-- TWITTER API -->
+  <div id="mySidenav" class="sidenav">
+
+    <!-- CLOSING BUTTON -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  
+    
+
+    <!-- API -->
+    <!-- <a class="twitter-timeline" data-theme="dark" data-height="800"
+        href="https://twitter.com/josmithphoto?ref_src=twsrc%5Etfw">Tweets by josmithphoto</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v13.0" nonce="FE3ihXXk"></script>
+
+    <div class="fb-page" 
+    data-href="https://www.facebook.com/GrantownSociety" 
+    data-tabs="timeline,events,messages"
+    data-width="500" 
+    data-height="700" 
+    data-small-header="true" 
+    data-adapt-container-width="false" 
+    data-hide-cover="false" 
+    data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/GrantownSociety" 
+    class="fb-xfbml-parse-ignore">
+    <a href="https://www.facebook.com/GrantownSociety">The Grantown Society</a></blockquote>
+</div>
+</div>
+<a id="facebook_icon" onclick="openNav()" class="openNav">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+        <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+    </svg>
+</a>
+
+<script src="apps/face.js"></script>
+</body>
+</html>
