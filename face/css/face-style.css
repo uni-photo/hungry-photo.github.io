@@ -3,6 +3,7 @@ body {
 }
 
 #facebook_icon {
+    position: fixed;
     top: 0;
 right: 0;
 }
