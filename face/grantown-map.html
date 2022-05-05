@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeafletJS</title>
+
+<!-- PREPARATION Process-->
+
+<!-- Include Leaflet CSS file in the head section of your document -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+<!-- Include Leaflet JavaScript file after Leaflet’s CSS: -->
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+
+</head>
+<body>
+<!-- Put a div element with a certain id where you want your map to be: -->
+<div id="mapid" style="height: 580px; width: 820px"></div>
+
+<script>
+// Decimal degrees (DD) express latitude and longitude geographic coordinates as decimal fractions of a degree.
+var mymap = L.map('mapid').setView([57.32951,  -3.61040],15); //setView([Latitude: 55.86 Degrees North(if negative its represent South), Longitude: -4.25 Degrees West (if negative its represent East) ])
+
+
+
+//Creating tile Layer
+
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY29kZWZ1bG5lc3MtZGV2IiwiYSI6ImNrdGlvbTQwZTEzdzIydXBlZmVqYzQ5bHEifQ.16HAH78RIm0nVCR6WJgsHg', 
+
+{
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+
+// Adding markers
+var marker = L.marker([57.329216640119384, -3.606331034531972]).addTo(mymap);
+// Adding pop up to markers
+marker.bindPopup("The Grantown Society").open.Popup();
+
+
+// var popup = L.popup()
+//     .setLatLng([51.5, -0.09])
+//     .setContent("I am a standalone popup.")
+//     .openOn(mymap);
+
+</script>
+</body>
+</html>
